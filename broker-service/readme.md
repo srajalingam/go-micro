@@ -12,4 +12,7 @@ docker-compose down - stop all
 docker stop project-broker-service-1 - pass container id to stop service
 docker compose up -d        - to start again
 
+image rebuild
+     docker compose up -d --build
+
 docker start <container-id>     - to start specific
