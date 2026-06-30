@@ -7,6 +7,10 @@ docker-compose down - stop all
 docker stop project-broker-service-1 - pass container id to stop service
 docker compose up -d        - to start again
 
+
+clear all image 
+        docker system prune -a
+
 image rebuild
      docker compose up -d --build
 
