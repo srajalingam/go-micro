@@ -14,4 +14,13 @@ clear all image
 image rebuild
      docker compose up -d --build
 
+to check log 
+  docker logs -f <container name>
+
 docker start <container-id>     - to start specific
+
+
+
+admin connect on mongodb through copmpass app
+
+  URI to:   mongodb://admin:password@localhost:27018/?authSource=admin
