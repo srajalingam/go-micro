@@ -3,6 +3,7 @@ package main
 import (
 	"bytes"
 	"html/template"
+	"log"
 	"time"
 
 	"github.com/vanng822/go-premailer/premailer"
@@ -86,6 +87,7 @@ func (m *Mail) SendSMTPMessage(msg Message) error {
 	}
 
 	err = email.Send(smptClient)
+	log.Println("err mail send", err)
 	if err != nil {
 		return err
 	}
